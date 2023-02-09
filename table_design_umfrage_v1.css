@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0rem;
+    font-family: 'Monoton';
+    font-size: 16px;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+.container {
+    margin: 5vw;
+    border: 6px solid white;
+    border-radius: 10px;
+}
+
+.question {
+    font-size: 2rem;
+    padding: calc(3px + 1rem) 1rem 1rem 1rem;
+    border-bottom: 3px solid white;
+    display: grid;
+    /* grid-template-columns: 1fr 5fr 3fr; */
+    grid-template-columns: 2% 50% 48%;
+    column-gap: 2rem;
+}
+
+.question h2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.question p {
+    /* height: 100%; */
+    /* line-height: 1.5; */
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.container_answer {
+    position: relative;
+    margin: auto 0;  
+}
+
+
+.answer {
+    border-left: 3px solid white;
+    padding-left: 1vw;
+}
+
+.answer input {
+    height: 20px;
+    width: 20px;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    /* Styles */
+    
+    body {
+        font-size: 24px;
+    }
+
+    .question {
+        font-size: 2.5rem;
+        padding: calc(3px + 1rem) 1rem 1rem 1rem;
+        border-bottom: 3px solid white;
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+        column-gap: 2rem;
+    }
+
+    .container_answer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: .1vh;
+        position: relative;
+        margin: auto 0;  
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+
+    .answer {
+        padding-left: 1vw;
+    }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  /* Styles */
+.question {
+    grid-template-columns: 1fr 5fr 2fr;
+}
+}

@@ -1,0 +1,114 @@
+:root{
+    --bg: white;
+    --fg: #ebece9;
+    --dark_green: #172D13;
+    --orange: #D76F30;
+    --light_green: #6BB77B;
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark_green);
+    margin: 0rem;
+    padding: 0rem;
+    width: 100vw;
+    font-family: 'Rubik Bubbles';
+    font-size: 48px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: var(--fg);
+}
+
+#first_slide {
+    background-color: var(--dark_green);
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.title {
+    background-image: url(./assets/bio_mask_v3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 13vw;
+    font-family: 'Erica One';
+    color: var(--fg);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.button_umfrage {
+    background-color: var(--dark_green);
+    color: var(--fg);
+    border: 2px solid var(--fg);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.button_umfrage:hover {
+    background-color: var(--orange);
+    color: var(--fg);
+    border: 2px solid var(--dark_green);
+    transition: 0.9s;
+}
+
+#second_slide {
+    background-color: var(--dark_green);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 3vw;
+}
+
+@media only screen and (max-device-width : 680px) and (orientation: portrait) {
+    /* .title { */
+    /*     position: absolute; */
+    /*     font-size: 4rem; */
+    /*     transform: rotate(90deg); */
+    /*     text-align: left; */
+    /*     left: -50%; */
+    /*     margin-left: 0; */
+    /* } */
+    /**/
+    /* .button_umfrage { */
+    /*     transform: rotate(90deg); */
+    /* } */
+
+}
+
+.heading {
+    font-size: 5rem;
+    font-family: 'Erica One';
+    color: var(--fg);
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.intro_text {
+    font-size: 1.5rem;
+}
+
+.wir {
+    font-size: 1.5rem;
+}

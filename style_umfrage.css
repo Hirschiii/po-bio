@@ -1,0 +1,129 @@
+:root{
+    --bg: white;
+    --fg: #ebece9;
+    --dark_green: #172D13;
+    --orange: #D76F30;
+    --light_green: #6BB77B;
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark_green);
+    margin: 0rem;
+    font-family: 'Monoton';
+    font-size: 24px;
+    scroll-behavior: smooth;
+    color: var(--fg);
+}
+
+.container {
+    margin: 5vw;
+    margin-top: 1vh;
+    border: 6px solid var(--fg);
+    border-radius: 10px;
+    padding: 2vw;
+
+}
+
+.answer label {
+    /* font-size: 1rem; */
+}
+
+.question {
+    border-bottom: 4px solid var(--fg);
+    padding-bottom: 2rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#email {
+    color: var(--fg);
+    background-color: var(--dark_green);
+    border: 2px solid var(--fg);
+    border-radius: 700px;
+    margin-top: 2rem;
+    padding: 8px;
+}
+
+#umfrage-sub {
+    /* font-size: 2rem; */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    padding-bottom: 1.3vw;
+    padding-top: 1.3vw;
+    background: var(--dark_green);
+    color: var(--fg);
+    margin: auto;
+    border: 1px solid var(--fg);
+    border-radius: 20px;
+    width: 20vw;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#umfrage-sub:hover {
+    background: var(--orange);
+    border: 1px solid var(--orange);
+    transition: 0.5s ease;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    /* Styles */
+    
+    .answer label {
+        /* font-size: 3rem; */
+    }
+
+    .answer input {
+        /* height: 40px; */
+        /* width: 40px; */
+        margin-right: 2vw;
+    }
+
+    .question {
+        margin-bottom: 2vh;
+    }
+}
+
+.answer {
+margin-top: 15px;
+}
+
+.button_umfrage {
+    background-color: var(--dark_green);
+    color: var(--fg);
+    border: 2px solid var(--fg);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 5vw;
+    margin-top: 1vw;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+
+.button_umfrage:hover {
+    background-color: var(--orange);
+    color: var(--fg);
+    border: 2px solid var(--dark_green);
+    transition: 0.9s;
+}
+
+.disclaimer {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+
+}

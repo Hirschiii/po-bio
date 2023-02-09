@@ -1,0 +1,154 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-y: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    background-color: black;
+    margin: 0rem;
+    padding: 0rem;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Monoton';
+    font-size: 48px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+.title {
+    font-size: 4rem;
+    color: white;
+    margin-left: 2rem;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    transition: 2s;
+}
+
+
+.image {
+    width: 27vmin;
+    height: 36vmin;
+    object-fit: cover;
+    object-position: center;
+    object-position: 100% center;
+}
+
+/* #track-bg { */
+/*     position: absolute; */
+/*     width: 120rem; */
+/*     rotate: 7deg; */
+/*     color: rgb(20, 20, 20); */
+/*     transform: translate(-5%,0%); */
+/*     z-index: -2; */
+/* } */
+
+/* #image-track { */
+/*     display: flex; */
+/*     position: relative; */
+/*     bottom: -45%; */
+/*     padding-left: 40vw; */
+/*     padding-right: 10vw; */
+/*     overflow-x: scroll; */
+/*     gap: 4vmin; */
+/*     height: 40vh; */
+/* } */
+
+#image-track {
+    position: relative;
+    height: 100vw;
+    width: 35vh;
+    top: -30%;
+    right: -40%;
+    margin-right: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: rotate(-90deg);
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    /* -ms-overflow-style: none; */
+    /* scrollbar-width: none;  */
+}
+
+/* #image-track::-webkit-scrollbar { */
+/*     display: none; */
+/* } */
+
+.image {
+    transform: rotate(90deg);
+}
+
+.button_umfrage {
+    position: absolute;
+    background-color: black;
+    color: white;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'Monoton';
+    margin: 1rem 1rem 1rem 10rem;
+    transition: 0.5s;
+}
+
+.button_umfrage:hover {
+    background-color: white;
+    color: black;
+    border: 0.2rem solid black;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+/* and (min-device-width : 320px)  */
+and (max-device-width : 480px) {
+    /* Styles */
+
+    .title {
+        position: relative;
+        transform: rotateZ(90deg);
+        font-size: 4rem;
+        color: white;
+        top: 20%;
+        left: -40%;
+        /* left: -90%; */
+    }
+
+    .button_umfrage {
+        top: 20%;
+    }
+
+    #image-track {
+        transform: rotate(0deg);
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        top: 40%;
+        height: 25vh;
+        width: 100vw;
+    }
+
+    .image {
+        transform: rotate(0deg);
+        margin-left: 5vw;
+    }
+
+    #first-img {
+        margin-left: 20vw;
+    }
+    #last-img {
+        margin-right: 45vw;
+    }
+
+}

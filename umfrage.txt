@@ -1,0 +1,187 @@
+::: container
+::: question_grid
+::: question
+### 1. Ist Ihnen bewusst, was die Biodiversität eigentlich ist?
+
+::: container_answer
+::: answer
+Ja
+:::
+
+::: answer
+Einigermaßen
+:::
+
+::: answer
+Nein
+:::
+:::
+:::
+
+::: question
+### 2. Fördern Sie bereits die Biodiversität
+
+::: container_answer
+::: answer
+Ja
+:::
+
+::: answer
+Einigermaßen
+:::
+
+::: answer
+Nein
+:::
+:::
+:::
+
+::: question
+### 3. Wie wird die Biodiversität gemessen?
+
+::: container_answer
+::: answer
+Pizza
+:::
+
+::: answer
+Pizza
+:::
+:::
+:::
+
+::: question
+### 4. Kennen Sie die drei Ebenen der Biodiversität?
+
+::: container_answer
+::: answer
+Ja
+:::
+
+::: answer
+Einigermaßen
+:::
+
+::: answer
+Nein
+:::
+:::
+:::
+
+::: question
+### 5. Wo findet man die so genannten Biodiversität-Hotspots?
+
+::: container_answer
+::: answer
+Ja
+:::
+
+::: answer
+Einigermaßen
+:::
+
+::: answer
+Nein
+:::
+:::
+:::
+
+::: question
+### 6. Wissen Sie, wie viele Tierarten es insgesamt gibt?
+
+::: container_answer
+::: answer
+Ja
+:::
+
+::: answer
+Einigermaßen
+:::
+
+::: answer
+Nein
+:::
+:::
+:::
+
+::: question
+### 7. Wie schadet man der Biodiversität des Meeres?
+
+::: container_answer
+::: answer
+Ja
+:::
+
+::: answer
+Einigermaßen
+:::
+
+::: answer
+Nein
+:::
+:::
+:::
+
+::: question
+### 8. Warum ist die Biodiversität des Meeres so wichtig?
+
+::: container_answer
+::: answer
+Ja
+:::
+
+::: answer
+Einigermaßen
+:::
+
+::: answer
+Nein
+:::
+:::
+:::
+
+::: question
+### 9. Wie kann man den Fortbestand der Biodiversität sichern?
+
+::: container_answer
+::: answer
+Ja
+:::
+
+::: answer
+Einigermaßen
+:::
+
+::: answer
+Nein
+:::
+:::
+:::
+
+::: question
+### 10. Welche Veränderungen würden durch entstehen durch das Fehlen der Biodiversität entstehen?
+
+::: container_answer
+::: answer
+Ja
+:::
+
+::: answer
+Einigermaßen
+:::
+
+::: answer
+Nein
+:::
+:::
+:::
+
+::: question
+### Dein Email (freiwillig)
+
+Wenn du dein Email angibts, bekommst du, neben einem allgemeinen
+Vergleich, eine detallierte Auswertung, wenn die Umfrage abgeschlossen
+ist.
+:::
+:::
+:::
