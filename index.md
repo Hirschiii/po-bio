@@ -37,3 +37,7 @@ TRUNCATE TABLE umfrage;
 
 für jeden frage eine Column mit dem Namen q1, q2, q3, q4, q5, q6, q7, q8, q9, q10
 Für jede Antwortmöglichkeit git es eine nummeriert row mit 1, 2 und 3. 1 ist die erste Antwortmöglichkeit, 2 die zweite und 3 die dritte.
+
+# chart bubble chart.js
+
+- stacked bar chart

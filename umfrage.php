@@ -262,7 +262,7 @@
                         </div>
                     </div>
                     <div class="question">
-                        <h3>13. Was ist der Roten List?</h3>
+                        <h3>13. Was ist die Roten List?</h3>
                         <div class="container_answer">
                             <div class="answer">
                                 <input type="radio" name="question13" value="1" id="yes_q13">
