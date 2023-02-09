@@ -1,29 +1,20 @@
 <?php
 // include ("connect.inc.php"); // Include der Datenbankverbindung
 
-$ip = $_SERVER["REMOTE_ADDR"] ?? '127.0.0.1';; // IP-Adresse des Users ausfindig machen und in $ip speichern.
-
-
 // ----------------------------------
-
-$sql = "SELECT * FROM ip WHERE ip='$ip'"; // Wählt alle Einträge aus der Datenbank aus, die in der Spalte ip die IP-Adresse des Besuchers haben.
-
-// $result = mysqli_query($con,$sql);
-// $result = mysqli_query($sql);
-
-// $menge = mysqli_num_rows($result); // Zählt die Anzahl der Zeilen
-$menge = 1;
-
-if ($menge > 0) { // Wenn ip in Datenbank vorhanden, dann "Sie haben heute schon gewählt" ausgeben
-
+if (isset($_GET['link'])) {
+echo $_GET["link"];
+$url = $_GET['link'];
 // Content when they took part in the pas 24 hours
 
-echo "Du hast in den letzten 24 Stunden teil genommen";
-}
-else {
+$url_components = parse_url($url);
 
-echo "Du hast noch nicht teil genommen.";
-}
+parse_str($url_components['query'], $params);
+
+if (isset($params['id']))
+echo "<h1>Hallo ".$params['id'], "</h1>";
+
+} 
 ?>
 
 <!doctype html>
@@ -38,32 +29,68 @@ echo "Du hast noch nicht teil genommen.";
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
+<div class="yanq">
+<h1>Fragen mit einer richtigen Antwort</h1>
 <div>
-  <canvas id="myChart"></canvas>
+  <canvas id="tfq"></canvas>
+</div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-  const ctx = document.getElementById('myChart');
+  const ctx = document.getElementById('tfq');
 
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
+      labels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6'],
+      datasets: [
+    {
+      label: 'Antwort 1',
+      data: [1,3,-9,2,3,1],
+      backgroundColor: "#FF0000",
     },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
+    {
+      label: 'Antwort 2',
+      data: [1,3,9,2,3,-1], 
+      backgroundColor: "#00FF00",
+    },
+    {
+      label: 'Antwort 3',
+      data: [2,-4,5,-2,2,3],
+      backgroundColor: "#0000FF",
+    },
+    {
+      label: 'Flasch',
+      data: [2,-4,5,-2,2,3],
+      backgroundColor: "#FF00FF",
+    },
+    {
+      label: 'Richtig',
+      data: [2,-4,5,-2,2,3],
+      backgroundColor: "#00FFFF",
+    },
+]
+    },
+options: {
+plugins: {
+      title: {
+        display: true,
+        text: 'Chart.js Bar Chart - Stacked'
+      },
+    },
+    color: "#FFFFFF",
+    responsive: true,
+    scales: {
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true
       }
     }
+  }
   });
 </script>
 </html>
