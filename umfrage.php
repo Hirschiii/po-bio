@@ -286,7 +286,7 @@
                     <p>Wenn du dein Email angibts, bekommst du, neben einem allgemeinen Vergleich, eine detallierte Auswertung, wenn die Umfrage abgeschlossen ist.</p>
                     <input type="email" id="email" name="email" placeholder="Dein Email">    
                     <p class="disclaimer">
-                        Wenn sie ihr Email angeben, stimmen sie Automatisch zu, das wir ihre Antworten verknüpft mir der Email abspeichern.
+                        Wenn sie ihr Email angeben, stimmen sie Automatisch zu, dass wir ihre Antworten verknüpft mir der Email abspeichern.
                     </p>
                 </div>
                 <input id="umfrage-sub" type='submit' name='submit' value='Submit'>
