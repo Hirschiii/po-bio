@@ -41,3 +41,11 @@ Für jede Antwortmöglichkeit git es eine nummeriert row mit 1, 2 und 3. 1 ist d
 # chart bubble chart.js
 
 - stacked bar chart
+
+# Gifs
+
+- <div style="width:30%;height:0;margin-right:auto;margin-left:auto;padding-bottom:108%;position:relative;"><iframe src="https://giphy.com/embed/YRuFixSNWFVcXaxpmX" width="30%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/moodman-YRuFixSNWFVcXaxpmX">via GIPHY</a></p>
+- <div style="width:30%;height:0;margin-right:auto;margin-left:auto;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/Zcm5DaspYzhTxstkF4" width="30%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/agt-nbc-tyra-banks-ameircas-got-talent-Zcm5DaspYzhTxstkF4">via GIPHY</a></p>
+- <div style="width:30%;height:0;margin-right:auto;margin-left:auto;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/JLFq4Jh5bSJEDHZjSB" width="30%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/studiosoriginals-good-job-cheerleader-you-did-it-JLFq4Jh5bSJEDHZjSB">via GIPHY</a></p>
+- <div style="width:30%;height:0;margin-right:auto;margin-left:auto;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/xT77XWum9yH7zNkFW0" width="30%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/9jumpin-wow-nice-well-done-xT77XWum9yH7zNkFW0">via GIPHY</a></p>
+
