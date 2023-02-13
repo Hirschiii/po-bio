@@ -64,7 +64,7 @@ wenigstens teils eine grundlegende Kenntnis zu unterrichten.
         const myUrl2 = new URL(window.location.toLocaleString()).searchParams.get("an");
 
         if (myUrl2 == "1") {
-            document.getElementById("teilgenommen").innerHTML = "Du hast erfolgreich Teilgenommen!";
+            document.getElementById("teilgenommen").innerHTML = '<p>Du hast erfolgreich Teilgenommen!</p><div style="width:30%;margin-right:auto;margin-left:auto;"><div style="height:0;padding-bottom:177.63157894736844%;position:relative;width:100%"><iframe allowfullscreen="" frameBorder="0" height="100%" src="https://giphy.com/embed/vfI3uwl4FMuDaLbZah/video" style="left:0;position:absolute;top:0" width="100%"></iframe></div></div>';
         } else if (myUrl2 == "2") {
             document.getElementById("teilgenommen").innerHTML = "Sie haben bereits gewählt.";
         } else if (myUrl2 == "3") {
