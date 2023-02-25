@@ -16,6 +16,17 @@ function validateForm(num) {
     }
 }
 
+var input = document.createElement("input");
+
+input.setAttribute("type", "hidden");
+
+input.setAttribute("name", "bntsubmit");
+
+input.setAttribute("value", "Submit");
+
+//append to form element that you want .
+document.getElementById("chells").appendChild(input);
+
 function tfvalid() {
     questions.forEach((question, i) => {
         if (!validateForm(i)) {
@@ -33,7 +44,6 @@ function question(change) {
 
     } else if (qnr == 14 && change == 1 && tfvalid()) {
 
-        document.getElementById("sub").value = "Submit";
         document.getElementById("myForm").submit();
 
     } else if (qnr == 14 && change == 1 && !tfvalid()) {

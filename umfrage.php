@@ -291,7 +291,7 @@
                         Wenn sie ihr Email angeben, stimmen sie Automatisch zu, dass wir ihre Antworten verknüpft mir der Email abspeichern.
                     </p>
                 </div>
-                <input id="final_sub" style="display:none" type='submit' id="sub" name='btnsubmit' value='Submit'>
+                <!-- <input id="final_sub" style="display:none" type='submit' id="sub" name='btnsubmit' value='Submit'> -->
         </form>
         <div class="btn_wrapper">
             <button class="button_umfrage" type="button" onclick="window.location.href='/';">Home</button>
