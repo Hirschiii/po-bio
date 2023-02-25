@@ -17,7 +17,7 @@ $result = mysqli_query($con,$sql);
 
 $menge = mysqli_num_rows($result); // Zählt die Anzahl der Zeilen
 
-file_put_contents("myfile.txt","$result \n $menge", FILE_APPEND);
+file_put_contents("myfile.txt","$menge", FILE_APPEND);
 
 if ($menge > 0) { // Wenn ip in Datenbank vorhanden, dann "Sie haben heute schon gewählt" ausgeben
 

@@ -33,6 +33,7 @@ function question(change) {
 
     } else if (qnr == 14 && change == 1 && tfvalid()) {
 
+        document.getElementById("sub").value = "Submit";
         document.getElementById("myForm").submit();
 
     } else if (qnr == 14 && change == 1 && !tfvalid()) {
@@ -65,7 +66,7 @@ function question(change) {
 }
 
 window.onkeypress = function(event) {
-   if (event.keyCode == 13) {
-       question(1)
-   }
+    if (event.keyCode == 13) {
+        question(1)
+    }
 }
