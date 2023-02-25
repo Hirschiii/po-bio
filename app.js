@@ -19,13 +19,15 @@ function validateForm(num) {
 var input = document.createElement("input");
 
 input.setAttribute("type", "hidden");
+input.setAttribute("id", "sub-btn");
 
 input.setAttribute("name", "bntsubmit");
 
 input.setAttribute("value", "Submit");
 
 //append to form element that you want .
-document.getElementById("myForm").appendChild(input);
+document.getElementById("allbtn").appendChild(input);
+document.getElementById("sub-btn").innerText = "Submit";
 
 function tfvalid() {
     questions.forEach((question, i) => {
@@ -42,11 +44,25 @@ function question(change) {
 
         communication.innerText = "Frage " + qnr + " von 13. Du bist bereits bei der ersten Frage."
 
-    } else if (qnr == 14 && change == 1 && tfvalid()) {
+    } else if (qnr == 13 && change == 1 && tfvalid()) {
 
-        document.getElementById("myForm").submit();
+        qnr = qnr + change;
+        communication.innerText = "Frage " + qnr + " von 13."
 
-    } else if (qnr == 14 && change == 1 && !tfvalid()) {
+        const old = document.querySelectorAll('.active');
+
+        old.forEach((element) => {
+            element.classList.remove('active');
+        });
+
+        document.getElementById("q" + qnr).classList.add("active")
+        // document.getElementById("myForm").submit();
+        document.getElementById("weiter").style.display = "none";
+        document.getElementById("sub-btn").setAttribute("type", "submit");
+
+
+
+    } else if (qnr == 13 && change == 1 && !tfvalid()) {
         var need = "";
 
         console.log(tfvalid)
@@ -72,6 +88,8 @@ function question(change) {
         });
 
         document.getElementById("q" + qnr).classList.add("active")
+        document.getElementById("weiter").style.display = "inline-block";
+        document.getElementById("sub-btn").setAttribute("type", "hidden");
     }
 }
 

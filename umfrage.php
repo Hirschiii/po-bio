@@ -293,10 +293,10 @@
                 </div>
                 <!-- <input id="final_sub" style="display:none" type='submit' id="sub" name='btnsubmit' value='Submit'> -->
         </form>
-        <div class="btn_wrapper">
+        <div class="btn_wrapper" id="allbtn">
             <button class="button_umfrage" type="button" onclick="window.location.href='/';">Home</button>
             <button class="umfrage-sub" type="button" onclick="question(-1)">Zurück</button>
-            <button class="umfrage-sub" type="button" onclick="question(1)">Weiter</button>
+            <button class="umfrage-sub" type="button" id="weiter" onclick="question(1)">Weiter</button>
         </div>
     </div>
 </body>
