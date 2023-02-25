@@ -25,7 +25,7 @@ input.setAttribute("name", "bntsubmit");
 input.setAttribute("value", "Submit");
 
 //append to form element that you want .
-document.getElementById("chells").appendChild(input);
+document.getElementById("myForm").appendChild(input);
 
 function tfvalid() {
     questions.forEach((question, i) => {
