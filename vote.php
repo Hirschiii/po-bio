@@ -8,7 +8,8 @@ $ip = $_SERVER["REMOTE_ADDR"] ?? '127.0.0.1';; // IP-Adresse des Users ausfindig
 
 // ----------------------------------
 
-$sql = "SELECT * FROM ip WHERE ip='$ip'"; // Wählt alle Einträge aus der Datenbank aus, die in der Spalte ip die IP-Adresse des Besuchers haben.
+$timebefore = time() - 86400;
+$sql = "SELECT * FROM ip WHERE ip='$ip' AND datum < $timebefore"; // Wählt alle Einträge aus der Datenbank aus, die in der Spalte ip die IP-Adresse des Besuchers haben.
 
 $result = mysqli_query($con,$sql);
 // $result = mysqli_query($sql);
