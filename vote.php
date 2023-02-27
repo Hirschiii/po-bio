@@ -8,12 +8,16 @@ $ip = $_SERVER["REMOTE_ADDR"] ?? '127.0.0.1';; // IP-Adresse des Users ausfindig
 
 // ----------------------------------
 
-$sql = "SELECT * FROM ip WHERE ip='$ip'"; // Wählt alle Einträge aus der Datenbank aus, die in der Spalte ip die IP-Adresse des Besuchers haben.
+$timebefore = time() - 86400;
+$sql = "SELECT * FROM ip WHERE ip='$ip' AND datum < $timebefore;"; // Wählt alle Einträge aus der Datenbank aus, die in der Spalte ip die IP-Adresse des Besuchers haben.
 
 $result = mysqli_query($con,$sql);
 // $result = mysqli_query($sql);
 
+
 $menge = mysqli_num_rows($result); // Zählt die Anzahl der Zeilen
+
+file_put_contents("myfile.txt","$menge", FILE_APPEND);
 
 if ($menge > 0) { // Wenn ip in Datenbank vorhanden, dann "Sie haben heute schon gewählt" ausgeben
 

@@ -23,20 +23,20 @@ body {
 .container {
     margin: 5vw;
     margin-top: 1vh;
-    border: 6px solid var(--fg);
-    border-radius: 10px;
     padding: 2vw;
 
 }
 
-.answer label {
-    /* font-size: 1rem; */
+.question {
+    padding-bottom: 2rem;
+    display: none;
+    min-height: 40vh;
 }
 
-.question {
-    border-bottom: 4px solid var(--fg);
-    padding-bottom: 2rem;
+.active {
+    display: inline-block;
 }
+
 
 h3 {
     margin-top: 2rem;
@@ -52,11 +52,10 @@ h3 {
     padding: 8px;
 }
 
-#umfrage-sub {
+#sub-btn,
+.button_umfrage,
+.umfrage-sub {
     /* font-size: 2rem; */
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -10%);
     padding-bottom: 1.3vw;
     padding-top: 1.3vw;
     background: var(--dark_green);
@@ -69,7 +68,9 @@ h3 {
     font-weight: 600;
 }
 
-#umfrage-sub:hover {
+#sub-btn,
+.button_umfrage:hover,
+.umfrage-sub:hover {
     background: var(--orange);
     border: 1px solid var(--orange);
     transition: 0.5s ease;
@@ -100,30 +101,18 @@ and (max-device-width : 480px) {
 margin-top: 15px;
 }
 
-.button_umfrage {
-    background-color: var(--dark_green);
-    color: var(--fg);
-    border: 2px solid var(--fg);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    margin-left: 5vw;
-    margin-top: 1vw;
-    font-size: 24px;
-    text-decoration: none;
-    transition: 0.5s ease;
-}
-
-
-.button_umfrage:hover {
-    background-color: var(--orange);
-    color: var(--fg);
-    border: 2px solid var(--dark_green);
-    transition: 0.9s;
-}
-
 .disclaimer {
     margin-top: 1rem;
     font-size: 0.8rem;
 
+}
+
+.btn_wrapper {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#final_sub { 
+    display: none
 }
