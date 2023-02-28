@@ -30,26 +30,26 @@ else {
 
 // ---------------------------------------------
 
-$not_complete = false;
-
-$questions = array("email", "question1", "question2", "question3", "question4", "question5", "question6", "question7", "question8", "question9", "question10", "question11", "question12", "question13");
-
-foreach ($questions as $question) {
-    if (!$_POST["$question"] && $question != "email") {
-        $not_complete = true;
-        break;
-    }
-}
-
-if (!$_POST["submit"] OR $not_complete == true) { // Überprüft, ob das Formular richtig ausgefüllt ist.
-
-
-    header('Location: /biodiversität/index.html?an=3');
-    die();
-
-}
-
-else if ($_POST["submit"]) {
+// $not_complete = false;
+//
+// $questions = array("email", "question1", "question2", "question3", "question4", "question5", "question6", "question7", "question8", "question9", "question10", "question11", "question12", "question13");
+//
+// foreach ($questions as $question) {
+//     if (!$_POST["$question"] && $question != "email") {
+//         $not_complete = true;
+//         break;
+//     }
+// }
+//
+// if (!$_POST["submit"] OR $not_complete == true) { // Überprüft, ob das Formular richtig ausgefüllt ist.
+//
+//
+//     header('Location: /biodiversität/index.html?an=3');
+//     die();
+//
+// }
+//
+// else if ($_POST["submit"]) {
 
 // Sql eintrag vorbereiten
 
@@ -138,7 +138,6 @@ $result2 = mysqli_query($con,$sql2);
 
 }
 
-}
 
     // header('Location: /biodiversität/biodiversität/index.html?an=1');
     header('Location: /biodiversität/index.html?an=1');
