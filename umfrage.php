@@ -292,6 +292,7 @@
                     </p>
                 </div>
                 <!-- <input id="final_sub" style="display:none" type='submit' id="sub" name='btnsubmit' value='Submit'> -->
+                <div id="form-btn"></div>
         </form>
         <div class="btn_wrapper" id="allbtn">
             <button class="button_umfrage" type="button" onclick="window.location.href='/po-bio';">Home</button>

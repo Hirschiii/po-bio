@@ -26,7 +26,7 @@ input.setAttribute("name", "bntsubmit");
 input.setAttribute("value", "Submit");
 
 //append to form element that you want .
-document.getElementById("allbtn").appendChild(input);
+document.getElementById("form-btn").appendChild(input);
 document.getElementById("sub-btn").innerText = "Submit";
 
 function tfvalid() {

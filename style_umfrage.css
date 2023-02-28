@@ -116,3 +116,9 @@ margin-top: 15px;
 #final_sub { 
     display: none
 }
+
+#form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
