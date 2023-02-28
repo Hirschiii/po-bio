@@ -8,24 +8,24 @@ $ip = $_SERVER["REMOTE_ADDR"] ?? '127.0.0.1';; // IP-Adresse des Users ausfindig
 
 // ----------------------------------
 
-$timebefore = time() - 86400;
-$sql = "SELECT * FROM ip WHERE ip='$ip' AND datum < $timebefore;"; // Wählt alle Einträge aus der Datenbank aus, die in der Spalte ip die IP-Adresse des Besuchers haben.
-
-$result = mysqli_query($con,$sql);
-// $result = mysqli_query($sql);
-
-
-$menge = mysqli_num_rows($result); // Zählt die Anzahl der Zeilen
-
-file_put_contents("myfile.txt","$menge", FILE_APPEND);
-
-if ($menge > 0) { // Wenn ip in Datenbank vorhanden, dann "Sie haben heute schon gewählt" ausgeben
-
-    // header('Location: /biodiversität/biodiversität/index.html?an=1');
-    header('Location: /biodiversität/index.html?an=2');
-    die();
-}
-else {
+// $timebefore = time() - 86400;
+// $sql = "SELECT * FROM ip WHERE ip='$ip' AND datum < $timebefore;"; // Wählt alle Einträge aus der Datenbank aus, die in der Spalte ip die IP-Adresse des Besuchers haben.
+//
+// $result = mysqli_query($con,$sql);
+// // $result = mysqli_query($sql);
+//
+//
+// $menge = mysqli_num_rows($result); // Zählt die Anzahl der Zeilen
+//
+// file_put_contents("myfile.txt","$menge", FILE_APPEND);
+//
+// if ($menge > 0) { // Wenn ip in Datenbank vorhanden, dann "Sie haben heute schon gewählt" ausgeben
+//
+//     // header('Location: /biodiversität/biodiversität/index.html?an=1');
+//     header('Location: /biodiversität/index.html?an=2');
+//     die();
+// }
+// else {
 
 
 // ---------------------------------------------
@@ -136,7 +136,7 @@ $timestamp = time(); // Ermittelt aktuelle Zeit
 $sql2 = "INSERT INTO ip (ip,datum) VALUES ('$ip','$timestamp')"; // Fügt IP und Datum in die Tabelle "ip" ein.
 $result2 = mysqli_query($con,$sql2);
 
-}
+// }
 
 
     // header('Location: /biodiversität/biodiversität/index.html?an=1');

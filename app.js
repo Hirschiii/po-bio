@@ -4,16 +4,20 @@ const communication = document.getElementById("log")
 
 const questions = document.querySelectorAll(".question")
 
-function validateForm(num) {
-    if ((num + 1) >= 14) {
-        return true
-    }
-    let x = document.forms["myForm"]["question" + (num + 1)].value;
-    if (x == "") {
-        // alert("Question Nr. " + (num + 1) + " must be filled out");
-        // need = need + ", " + (num + 1);
-        return false
-    }
+function validateForm() {
+    questions.forEach((question, i) => {
+        if (i < 13) {
+            console.log("true")
+            let x = document.forms["myForm"]["question" + (i + 1)].value;
+            if (x == "") {
+                alert("Question Nr. " + (i + 1) + " must be filled out");
+                // need = need + ", " + (num + 1);
+                return false
+            }
+        }
+        console.log(i)
+    })
+    return true
 }
 
 var input = document.createElement("input");
@@ -30,12 +34,6 @@ document.getElementById("form-btn").appendChild(input);
 document.getElementById("sub-btn").innerText = "Submit";
 
 function tfvalid() {
-    questions.forEach((question, i) => {
-        if (!validateForm(i)) {
-            return false
-        }
-    });
-    return true
 }
 
 
@@ -44,7 +42,8 @@ function question(change) {
 
         communication.innerText = "Frage " + qnr + " von 13. Du bist bereits bei der ersten Frage."
 
-    } else if (qnr == 13 && change == 1 && tfvalid()) {
+    } else if (qnr == 13 && change == 1 && validateForm() == true) {
+
 
         qnr = qnr + change;
         communication.innerText = "Frage " + qnr + " von 13."
