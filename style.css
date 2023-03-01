@@ -70,8 +70,7 @@ body {
     transition: 0.9s;
 }
 
-#second_slide {
-    background-color: var(--dark_green);
+.slide {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -79,6 +78,51 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     padding: 3vw;
+}
+
+#second_slide {
+    background-color: white;
+    color: var(--dark_green);
+}
+
+#second_slide > .heading {
+    color: var(--dark_green);
+}
+
+.intro_text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.wir {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_text > img{
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.wir > img {
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.content {
+    max-width: 60vw;
 }
 
 @media only screen and (max-device-width : 680px) and (orientation: portrait) {
@@ -100,7 +144,6 @@ body {
 .heading {
     font-size: 5rem;
     font-family: 'Erica One';
-    color: var(--fg);
     text-align: left;
     margin-bottom: 1rem;
 }
@@ -112,3 +155,5 @@ body {
 .wir {
     font-size: 1.5rem;
 }
+
+

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>My Page Title</title>
+    <title>Biodiversität</title>
     <meta name="description" content="Selbsteinschätzung Biodiversität">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style_umfrage.css">
@@ -264,7 +264,7 @@
                     </div>
                 </div>
                 <div class="question" id="q13">
-                    <h3>13. Was ist die Roten List?</h3>
+                    <h3>13. Was ist die Roten Liste?</h3>
                     <div class="container_answer">
                         <div class="answer">
                             <input type="radio" name="question13" value="1" id="yes_q13">
