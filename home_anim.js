@@ -24,14 +24,14 @@ animation_1.forEach((box, i) => {
             trigger: box,
             start: "+=133 95%",
             end: "+=200 55%",
-            scrub: 0.1,
+            toggleActions: 'play none none reverse',
         }
     })
         .to(box.children, {
             opacity: 1,
             stagger: 0.2,
             xPercent: 0,
-            duration: 1,
+            duration: 0.6,
         })
 });
 
