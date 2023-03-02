@@ -35,15 +35,12 @@
         function getArray($ques)
         {
             include("connect.inc.php"); // Include der Datenbankverbindung
-            $sql = "SELECT $ques FROM umfrage;";
+            // $sql = "SELECT $ques FROM umfrage;";
+            $sql = "select count($ques) from umfrage group by $ques";
             $result = mysqli_query($con, $sql);
-            $array = array();
-            $newarray = array();
-            while ($newresult = mysqli_fetch_assoc($result)) {
-                $array[] = $newresult[$ques];
-            }
-            echo json_encode(array_values(array_count_values($array)));
-         };
+            $new_result = mysqli_fetch_array($result, MYSQLI_NUM);
+            echo json_encode($new_result);
+        };
 
         ?>
         <div>
