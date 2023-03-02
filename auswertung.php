@@ -41,11 +41,7 @@
             while ($newresult = mysqli_fetch_assoc($result)) {
                 $array[] = $newresult[$ques];
             }
-            $newresult = array();
-            foreach ($array as $value => $count) {
-                array_push($newresult, $count);
-            }
-            echo json_encode($newarray);
+            echo json_encode(array_count_values($array));
         };
 
         ?>
