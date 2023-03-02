@@ -32,14 +32,14 @@
         // $result = mysqli_query($con, $sql);
         // $new_result = mysqli_fetch_array($result, MYSQLI_NUM);
 
-        function getArray($ques)
+        function getArray($ques, $num)
         {
             include("connect.inc.php"); // Include der Datenbankverbindung
             // $sql = "SELECT $ques FROM umfrage;";
             $sql = "select count($ques) from umfrage group by $ques";
             $result = mysqli_query($con, $sql);
             $new_result = mysqli_fetch_array($result, MYSQLI_NUM);
-            echo json_encode($new_result);
+            echo json_encode($new_result[$num]);
         };
 
         ?>
@@ -59,29 +59,19 @@
                 labels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6'],
                 datasets: [{
                         label: 'Antwort 1',
-                        data: <?php getArray("q1") ?>,
+                        data: <?php getArray("q1",1) ?>,
                         backgroundColor: "#FF0000",
                     },
                     {
                         label: 'Antwort 2',
-                        data: <?php getArray("q2") ?>,
+                        data: <?php getArray("q1",2) ?>,
                         backgroundColor: "#00FF00",
                     },
                     {
                         label: 'Antwort 3',
-                        data: <?php getArray("q3") ?>,
+                        data: <?php getArray("q1",3) ?>,
                         backgroundColor: "#0000FF",
-                    },
-                    {
-                        label: 'Flasch',
-                        data: <?php getArray("q4") ?>,
-                        backgroundColor: "#FF00FF",
-                    },
-                    {
-                        label: 'Richtig',
-                        data: <?php getArray("q5") ?>,
-                        backgroundColor: "#00FFFF",
-                    },
+                    }
                 ]
             },
             options: {
