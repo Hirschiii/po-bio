@@ -29,10 +29,22 @@
         $id = $_GET["id"];
 
         // $sql = "SELECT (q1,q2,q3,q4,q5,q6,q7,q8,q9,10,12,13) FROM umfrage WHERE id = $id;";
-        $sql = "SELECT (q1,q2,q3,q4,q5,q6,q7,q8,q9,10,12,13) FROM umfrage;";
-        $result = mysqli_query($con, $sql);
-        $new_result = mysqli_fetch_array($result, MYSQLI_NUM);
-        echo $new_result;
+        // $sql = "SELECT (q1,q2,q3,q4,q5,q6,q7,q8,q9,10,12,13) FROM umfrage;";
+        // $result = mysqli_query($con, $sql);
+        // $new_result = mysqli_fetch_array($result, MYSQLI_NUM);
+
+        function getArray($ques)
+        {
+            $sql = "SELECT $ques FROM umfrage;";
+            $result = mysqli_query($con, $sql);
+            $array = array();
+            while ($newresult = mysqli_fetch_assoc($result)) {
+                $array[] = $newresult[$ques];
+            }
+
+            return $array;
+        };
+
         ?>
         <div>
             <canvas id="tfq"></canvas>
@@ -50,27 +62,27 @@
                 labels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6'],
                 datasets: [{
                         label: 'Antwort 1',
-                        data: <?php echo json_encode($new_result[1]) ?>,
+                        data: <?php getArray("q1") ?>,
                         backgroundColor: "#FF0000",
                     },
                     {
                         label: 'Antwort 2',
-                        data: <?php echo json_encode($new_result[2]) ?>,
+                        data: <?php getArray("q2") ?>,
                         backgroundColor: "#00FF00",
                     },
                     {
                         label: 'Antwort 3',
-                        data: <?php echo json_encode($new_result[3]) ?>,
+                        data: <?php getArray("q3") ?>,
                         backgroundColor: "#0000FF",
                     },
                     {
                         label: 'Flasch',
-                        data: <?php echo json_encode($new_result[4]) ?>,
+                        data: <?php getArray("q4") ?>,
                         backgroundColor: "#FF00FF",
                     },
                     {
                         label: 'Richtig',
-                        data: <?php echo json_encode($new_result[5]) ?>,
+                        data: <?php getArray("q5") ?>,
                         backgroundColor: "#00FFFF",
                     },
                 ]
