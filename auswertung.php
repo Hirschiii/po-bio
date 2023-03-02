@@ -19,23 +19,19 @@
         include("connect.inc.php"); // Include der Datenbankverbindung
 
         // ----------------------------------
-        if (isset($_GET['id'])) {
-            // $url = $_GET['link'];
-            // Content when they took part in the pas 24 hours
+        // $url = $_GET['link'];
+        // Content when they took part in the pas 24 hours
 
-            // $url_components = parse_url($url);
-            //
-            // parse_str($url_components['query'], $params);
+        // $url_components = parse_url($url);
+        //
+        // parse_str($url_components['query'], $params);
 
-            if (isset($_GET['id']))
-                echo "<h1>Hallo Nr. " . $_GET['id'], "</h1>";
-            $id = $_GET["id"];
+        $id = $_GET["id"];
 
-            // $sql = "SELECT (q1,q2,q3,q4,q5,q6,q7,q8,q9,10,12,13) FROM umfrage WHERE id = $id;";
-            $sql = "SELECT (q1,q2,q3,q4,q5,q6,q7,q8,q9,10,12,13) FROM umfrage;";
-            $result = mysqli_query($con, $sql);
-            $new_result = mysqli_fetch_array($result, MYSQLI_NUM);
-        };
+        // $sql = "SELECT (q1,q2,q3,q4,q5,q6,q7,q8,q9,10,12,13) FROM umfrage WHERE id = $id;";
+        $sql = "SELECT (q1,q2,q3,q4,q5,q6,q7,q8,q9,10,12,13) FROM umfrage;";
+        $result = mysqli_query($con, $sql);
+        $new_result = mysqli_fetch_array($result, MYSQLI_NUM);
         echo $new_result;
         ?>
         <div>
