@@ -16,7 +16,6 @@
     <div class="yanq">
         <h1>Fragen mit einer richtigen Antwort</h1>
         <?php
-        include("connect.inc.php"); // Include der Datenbankverbindung
 
         // ----------------------------------
         // $url = $_GET['link'];
@@ -35,6 +34,7 @@
 
         function getArray($ques)
         {
+            include("connect.inc.php"); // Include der Datenbankverbindung
             $sql = "SELECT $ques FROM umfrage;";
             $result = mysqli_query($con, $sql);
             $array = array();
