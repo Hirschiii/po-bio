@@ -25,7 +25,7 @@
         //
         // parse_str($url_components['query'], $params);
 
-        $id = $_GET["id"];
+        // $id = $_GET["id"];
 
         // $sql = "SELECT (q1,q2,q3,q4,q5,q6,q7,q8,q9,10,12,13) FROM umfrage WHERE id = $id;";
         // $sql = "SELECT (q1,q2,q3,q4,q5,q6,q7,q8,q9,10,12,13) FROM umfrage;";
