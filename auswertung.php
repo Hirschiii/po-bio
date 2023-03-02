@@ -41,8 +41,14 @@
             while ($newresult = mysqli_fetch_assoc($result)) {
                 $array[] = $newresult[$ques];
             }
-            echo json_encode(array_count_values($array));
-        };
+            $counted_dub = array_count_values($array);
+            $newarray = array();
+            foreach ($counted_values as $value => $count) { 
+                if ($count > 1) { 
+                    array_push($newarray, $count);                    
+                } 
+                echo json_encode(array_count_values($newarray));
+            };
 
         ?>
         <div>
