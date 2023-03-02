@@ -41,8 +41,7 @@
             while ($newresult = mysqli_fetch_assoc($result)) {
                 $array[] = $newresult[$ques];
             }
-            echo $array;
-            return $array;
+            echo json_encode($array);
         };
 
         ?>
